@@ -43,18 +43,38 @@ trumpet_killing_in_the_name_of = \relative do' {
   \compressFullBarRests
   R1*4^"Guitare" R1*4^"Gros"
   \transpose do re' {
-  \intro \intro \tttTTTtriplet \tttTTTtriplet \tttTTTtriplet \tuplet 3/2 {re4-. re-. re-.} mib'8-. r8 r4 
-  \relative do {\cccc}
-  \repeat volta 2 {
+    \intro \intro \tttTTTtriplet \tttTTTtriplet \tttTTTtriplet \tuplet 3/2 {re4-. re-. re-.} mib'8-. r8 r4 
     \relative do {\cccc}
-    \relative do {\pontunup} \relative do {\pontun}
-    \relative do {\pontunup} \relative do {\pontunbis}
-    \relative do {\pontdeux}
-    \relative do' {\fulljustified \fulljustified}
+    \repeat volta 2 {
+      \relative do {\cccc}
+      \relative do {\pontunup} \relative do {\pontun}
+      \relative do {\pontunup} \relative do {\pontunbis}
+      \relative do {\pontdeux}
+      \relative do' {\fulljustified \fulljustified}
+    }
+    \relative do' {\fulljustified}
+    \repeat volta 2 {\relative do' {\fulljustified} }
+    \outro
   }
-  \relative do' {\fulljustified}
-  \repeat volta 2 {\relative do' {\fulljustified} }
-  \outro
+}
+
+sax_alto_killing_in_the_name_of = \relative do' {
+  \global
+  \compressFullBarRests
+  R1*4^"Guitare" R1*4^"Gros"
+  \transpose do la' {
+    \intro \intro \tttTTTtriplet \tttTTTtriplet \tttTTTtriplet \tuplet 3/2 {re4-. re-. re-.} mib'8-. r8 r4 
+    \relative do {\cccc}
+    \repeat volta 2 {
+      \relative do {\cccc}
+      \relative do {\pontunup} \relative do {\pontun}
+      \relative do {\pontunup} \relative do {\pontunbis}
+      \relative do {\pontdeux}
+      \relative do' {\fulljustified \fulljustified}
+    }
+    \relative do' {\fulljustified}
+    \repeat volta 2 {\relative do' {\fulljustified} }
+    \outro
   }
 }
 
@@ -167,6 +187,8 @@ sax_baryton_killing_in_the_name_of = \transpose do la { \global \clef treble \ra
 short_sax_baryton_killing_in_the_name_of = \transpose do la { \global \clef treble \short_bass_killing_in_the_name_of}
 souba_killing_in_the_name_of = \transpose do re' { \global \clef treble \raw_souba_killing_in_the_name_of}
 short_souba_killing_in_the_name_of = \transpose do re' { \global \clef treble \short_souba_killing_in_the_name_of}
+sax_tenor_killing_in_the_name_of = \transpose do re' { \global \clef treble \raw_bass_killing_in_the_name_of}
+short_sax_tenor_killing_in_the_name_of = \transpose do re' { \global \clef treble \short_bass_killing_in_the_name_of}
 
 \book {
   \bookOutputSuffix "trumpet"
@@ -175,6 +197,28 @@ short_souba_killing_in_the_name_of = \transpose do re' { \global \clef treble \s
       instrumentName = "Trompette"
       midiInstrument = "trumpet"
     } \trumpet_killing_in_the_name_of
+    \layout { }
+  }
+}
+
+\book {
+  \bookOutputSuffix "sax_alto"
+  \score {
+    \new Staff \with {
+      instrumentName = "Sax Alto"
+      midiInstrument = "sax alto"
+    } \sax_alto_killing_in_the_name_of
+    \layout { }
+  }
+}
+
+\book {
+  \bookOutputSuffix "short_souba"
+  \score {
+    \new Staff \with {
+      instrumentName = "Souba"
+      midiInstrument = "brass section"
+    } \short_souba_killing_in_the_name_of
     \layout { }
   }
 }
@@ -191,12 +235,45 @@ short_souba_killing_in_the_name_of = \transpose do re' { \global \clef treble \s
 }
 
 \book {
+  \bookOutputSuffix "short_sax_baryton"
+  \score {
+    \new Staff \with {
+      instrumentName = "Baryton"
+      midiInstrument = "sax baryton"
+    } \short_sax_baryton_killing_in_the_name_of
+    \layout { }
+  }
+}
+
+\book {
   \bookOutputSuffix "sax_baryton"
   \score {
     \new Staff \with {
       instrumentName = "Baryton"
       midiInstrument = "sax baryton"
     } \sax_baryton_killing_in_the_name_of
+    \layout { }
+  }
+}
+
+\book {
+  \bookOutputSuffix "short_sax_tenor"
+  \score {
+    \new Staff \with {
+      instrumentName = "Tenor"
+      midiInstrument = "sax tenor"
+    } \short_sax_tenor_killing_in_the_name_of
+    \layout { }
+  }
+}
+
+\book {
+  \bookOutputSuffix "sax_tenor"
+  \score {
+    \new Staff \with {
+      instrumentName = "Tenor"
+      midiInstrument = "sax tenor"
+    } \sax_tenor_killing_in_the_name_of
     \layout { }
   }
 }
