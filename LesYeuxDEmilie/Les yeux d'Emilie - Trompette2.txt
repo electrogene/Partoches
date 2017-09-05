@@ -1,0 +1,44 @@
+\version "2.18.2"
+\language "français"
+
+\header {
+  title = "Dans les yeux d'Emilie"
+  subtitle = ""
+  composer = ""
+}
+
+global = {
+  \key re \minor
+  \time 4/4
+}
+
+trumpetBb = \relative do'' {
+  \global
+  \transposition sib
+  
+  \repeat volta 2 {
+  fa,1^\markup { \huge On \huge chante }  (fa2.) sol8 fa8 mi1 (mi2.) fa8 mi re1 (re2.) re4  fa1 mi \break
+  <fa la>1^\markup { \huge On \huge chante \huge encore} (<fa la>2.) <sol sib>8 <fa la>8 <mi sol>1 (<mi sol>2.) <fa la>8 <mi sol> <re fa>1 (<re fa>2.) <re fa>4  <fa la>1 <mi sol> \bar "||" \break
+  fa2^\markup { \huge On \huge joue } la do4 re mi fa sol,2 do 
+ mi4 mi fa sol fa8 mi re2. (re4) re mi fa mi8 re do2 do8 re do4 sib la sol
+ fa2 la do4 re mi fa sol,2 do 
+ mi4 mi fa sol fa8 mi re2. (re4) re mi fa fa8 mi re2. (re4) re mi fa fa8 mi re2. (re4) re mi fa fa2 mi }
+  \alternative {
+  { re2 do }
+  { re2 mi fa1 \bar "|." } 
+ }
+ %25
+  
+}
+
+\score {
+  \new Staff \with {
+    instrumentName = "Trompette2"
+    midiInstrument = "trumpet"
+  } \trumpetBb
+  \layout { }
+  \midi {
+    \tempo 4=140
+  }
+}
+
