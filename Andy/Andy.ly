@@ -29,7 +29,7 @@ voixUnCommon= {
 voixDeuxCommon= { 
   r2  r8 do re do | \repeat volta 2 {
     \repeat volta 2  {
-      \couplet fa4  mib8 mib mib re do la
+      \couplet fa8  mib8 mib mib re do la4
     }
     r2 re'4 do | r2 la8 do do4 | r2 re4 do~ | do4 re8 fa re la do4 | r2 re4 do | r2 la8 do do4 | r2 re4 do~ | do2 r8 do, re do |
   }
