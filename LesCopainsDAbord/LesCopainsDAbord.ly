@@ -13,34 +13,41 @@ global = {
 }
 
 voixUnCommon= {
-  r8 fa4. sol4 sold la sol fa sol8 la (la4.) sol8 fa4 sol la re mi fa8 mi (mi4.) re8 do4 la sol re sol re sol fa8 la sol4 fa8 si, (si1)
-  r8 do4. re4 mi fa fa mi fa8 re (re2) r8 fa mi re dod4 la' la lab8 sol (sol2) r8 sib la sol
+  r8 fa4. sol4 sold | la sol fa sol8 la~ | la4. sol8 fa4 sol | la re mi fa8 mi~ | 
+  mi4. re8 do4 la | sol re sol re | sol fa8 la sol4 fa8 si,~ | si1 |
+  r8 do4. re4 mi | fa fa mi fa8 re~ | re2 r8 fa mi re | dod4 la' la lab8 sol~ | 
+  sol2 r8 sib la sol |
 }
 
-voixDeuxCommon= { r8 la4. sib4 si do sib la sib8 do (do4.) sib8 la4 sib do fa sol la8 do, (do4.) fa8 mi4 do }
-voixDeuxFin= { re4 re8 fa mi4 re8 sol, (sol1)
-    r8 la4. sib4 do re re do re8 sib (sib2) r8 re do sib la4 mi' mi fa8 mi (mi2) r8 sol fa mi re4 re re la sol re'  \tuplet 3/2 {mi4 sib do} la1 }
+voixDeuxCommon= { 
+  r8 la4. sib4 si | do sib la sib8 do~ |  do4. sib8 la4 sib | do fa sol la8 do,~ | 
+  do4. fa8 mi4 do | }
+voixDeuxFin= { 
+  re4 re8 fa mi4 re8 sol,~ | sol1 | r8 la4. sib4 do | re re do re8 sib~ |
+  sib2 r8 re do sib | la4 mi' mi fa8 mi~ | mi2 r8 sol fa mi | re4 re re la |
+  sol re'  \tuplet 3/2 {mi4 sib do} | la1 |
+}
 
 piccolo =  \relative do'' {
   \global
-  \voixUnCommon {  fa4 fa fa re si la' \tuplet 3/2 {sol4 re mi}  fa1 }
+  \voixUnCommon {  fa4 fa fa re | si la' \tuplet 3/2 {sol4 re mi} |  fa1 | }
 }
 
 saxTenorUn = \transpose sib, do  \relative do'' {
   \global
-  \voixDeuxCommon { si4 sol la si } \voixDeuxFin
+  \voixDeuxCommon { si4 sol la si | } \voixDeuxFin
 }
 
 saxTenorDeux = \transpose sib, do  \relative do' {
   \global
-  \voixUnCommon { fa4 fa fa re' si la \tuplet 3/2 {sol4 re mi}  fa1 } 
+  \voixUnCommon { fa4 fa fa re' | si la \tuplet 3/2 {sol4 re mi} |  fa1 | } 
 }
 
 trumpetUn =  \transpose sib do \piccolo
 saxAltoUn =  \transpose mib do \piccolo
 saxAltoDeux =  \transpose mib do  \relative do'' {
   \global
-  \voixDeuxCommon { si4 si re si } \voixDeuxFin
+  \voixDeuxCommon { si4 si re si | } \voixDeuxFin
 }
 
 \book {
