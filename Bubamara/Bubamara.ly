@@ -12,14 +12,22 @@ global = {
   \time 4/4
 }
 
-voixUnCommon= \repeat volta 2  { \repeat volta 2 {  la'4. sib8 la4 sold la8 la4 fa8 re2 r8 re'4 re8 re do sib la sib2 sol r8 sib4 sol8 mi4 sib' la8 la4 fa8 re4 r r8 mi4 mi8 fa mi red mi }
+voixUnCommon= \repeat volta 2  {
+  \repeat volta 2 {
+    la'4. sib8 la4 sold | la8 la4 fa8 re2 | r8 re'4 re8 re do sib la | sib2 sol | 
+    r8 sib4 sol8 mi4 sib' | la8 la4 fa8 re4 r | r8 mi4 mi8 fa mi red mi | 
+  }
   \alternative {
      { la4 sib4 la2 }
      { r8 la4 sib8 la sol fa mi }
   }
-  re mi fa sol la sold la4 r8 re4 sib8 sol4 r r8 la4 fa8 re4 r sol8 fa mi re dod re mi fa re2. r4
-  la8 re mi fa la, re mi fa lab lab4 lab8 lab4 r la,8 re mi fa la, re mi fa lab lab4 lab8 la4 r
-  la,8 re mi fa la, re mi fa lab lab4 lab8 lab4 r la,8 re mi fa la, re mi fa lab lab4 lab8 la4 r
+  \bar "[|:"
+    re mi fa sol la sold la4 | r8 re4 sib8 sol4 r | r8 la4 fa8 re4 r | sol8 fa mi re dod re mi fa |
+    re2. r4 
+  \bar ":|]"
+  \repeat unfold 2 {
+    la8 re mi fa la, re mi fa | lab lab4 lab8 lab4 r | la,8 re mi fa la, re mi fa | lab lab4 lab8 la4 r | 
+  }
 }
 
 
