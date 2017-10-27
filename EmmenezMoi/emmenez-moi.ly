@@ -14,15 +14,13 @@ global = {
 
 phraseUn = {la4 si do2 si8 si la4 re do si2 si4 la si sol }
 tigidi = {mi4 do'8 re mi4 mi re do~do si8 do re4 re }
-tigidiDeux = {mi4 do'8 re mi4 mi re do si do re mi }
+tigidiDeux = {mi4 do'8 re mi4 mi re do si do re mi ,}
 boo = {mi2.~mi~mi}
-phraseDeux = {r4 mi,4 la la8 la la la si si si si si si la la la la la la si si si si si si la2.~la4 sol fa sol sol2~sol
+phraseDeux = {r4 mi4 la la8 la la la si si si si si si la la la la la la si si si si si si la2.~la4 sol fa sol sol2~sol
 sol4 do do8 do do do re re re re re re do do do do do do re re re re re re do2.~do4 si la si si2~si4
 }
 FinCouplet = {la4 si do2 si8 si la4 re do si2 si4 la si sol la2.~la~la4 r r}
-Refrain = {la8 r si r do r si2 si4 la si sol mi2. la4 si do re do si la si sol mi2.
-mi4 mi la sol2 sol4~sol la si do8 si la2~la2 si4 do si la si la sol la r r
-la si do si2 si4 la si sol mi2. la4 si do re do si la si sol mi2.
+Refrain = {la4 si do si2 si4 la si sol mi2. la4 si do re do si la si sol mi2.
 mi4 mi la sol2 sol4~sol la si do8 si la2~la2 si4 do si la si la sol la r r
 }
 
@@ -33,13 +31,23 @@ r4 \phraseUn \tigidi
 \phraseDeux
 \phraseUn \tigidi
 \FinCouplet
-\Refrain
+\repeat volta 2 { \Refrain}
 }
 
 
 
 trumpetUn =  \transpose sib do' \piccolo
-saxAltoUn =  \transpose mib do \piccolo
+
+
+saxAltoUn = \relative do'' {
+\global
+r4 \phraseUn \boo
+ \phraseUn \boo
+\phraseDeux
+\phraseUn \boo
+\FinCouplet
+\repeat volta 2 { \Refrain}
+}
 
 \book {
   \bookOutputSuffix "trumpet"
@@ -83,16 +91,4 @@ saxAltoUn =  \transpose mib do \piccolo
   }
 }
 
-\book {
-  \bookOutputSuffix "tenor"
-  \score {
-    \new Staff \with {
-      instrumentName = "Sax tenor"
-      midiInstrument = "sax tenor"
-    } \saxTenorUn
-    \layout { }
-    \midi {
-      \tempo 4=140
-    }
-  }
-}
+
