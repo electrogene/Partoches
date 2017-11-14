@@ -101,6 +101,41 @@ voixmedium = \relative do'
   fa4 r2.
 }
 
+voixbasse = \relative do
+{
+  \key mi \minor
+  % Refrain
+  \mark \default
+    mi2. fad8 sol8
+  ~ sol2. sol8 sol8
+  ~ sol2. sol8 fad8
+  ~ fad1
+   r4 mi2 fad8 sol8
+   ~ sol2. sol8 sol8
+   ~ sol2. sol8 fad8
+   ~ fad1
+  \break
+  % Couplet
+  \mark \default
+  \repeat volta 2
+  {
+    mi8. mi16 ~mi8 re mi4 r8 si16 re
+    mi8. mi16 ~mi8 re mi mi fad sol
+    la8. la16 ~la8 sol la4 r8 mi16 sol
+    la8. la16 ~la8 sol si si la sol
+  }
+  \break
+  % Final
+  \mark \default
+  \tuplet 3/2 { mi4 mi fad } fad r
+  r1
+  \tuplet 3/2 { sol4 sol la } la r
+  r1
+ \tupletSpan 2 \tuplet 3/2 { si4 si do la si ~si }
+  r1
+  mi,4 r2.
+}
+
 % Association instruments / Voix
 trompettehaute = {
   \transposition sib
@@ -117,27 +152,84 @@ trompettemedium = {
   %\transpose sib do'
   \voixmedium
 }
+tuba = {
+  %\transposition sib
+  \clef bass
+  \transpose sib sib,
+  \voixbasse
+}
+
+baryton = {
+ %\transposition mib
+  \clef treble
+  \transpose sib mib''
+  \voixbasse
+}
 
 % PARTITION
-\score {
-<<
-  %\new Staff \with {
-  %  instrumentName = "Trompette 1"
-  %  midiInstrument = "trumpet"
-  %} \trompettehaute
-  \new Staff \with {
-    instrumentName = "Sax Alto"
-    midiInstrument = "trumpet"
-  } \saxalto
-  %\new Staff \with {
-  %  instrumentName = "Trompette 2"
-  %  midiInstrument = "trumpet"
-  %} \trompettemedium
->>  
-
-  \layout {}
-  \midi {
-    \tempo 4 = 130
+\book {
+  \bookOutputSuffix "trumpet"
+  \score {
+    \new Staff \with {
+      instrumentName = "Trompette"
+      midiInstrument = "trumpet"
+    } \trompettehaute
+    \layout { }
+    \midi {
+      \tempo 4=130
+    }
+  }
+}
+\book {
+  \bookOutputSuffix "saxalto"
+  \score {
+    \new Staff \with {
+      instrumentName = "Sax Alto"
+      midiInstrument = "sax alto"
+    } \saxalto
+    \layout { }
+    \midi {
+      \tempo 4=130
+    }
+  }
+}
+\book {
+  \bookOutputSuffix "trumpet2"
+  \score {
+    \new Staff \with {
+      instrumentName = "Trompette 2"
+      midiInstrument = "trumpet"
+    } \trompettemedium
+    \layout { }
+    \midi {
+      \tempo 4=130
+    }
+  }
+}
+\book {
+  \bookOutputSuffix "tuba"
+  \score {
+    \new Staff \with {
+      instrumentName = "Tuba"
+      midiInstrument = "tuba"
+    } \tuba
+    \layout { }
+    \midi {
+      \tempo 4=130
+    }
   }
 }
 
+\book {
+  \bookOutputSuffix "baryton"
+  \score {
+    \new Staff \with {
+      instrumentName = "Baryton"
+      midiInstrument = "sax baryton"
+    } \baryton
+    \layout { }
+    \midi {
+      \tempo 4=130
+    }
+  }
+}
