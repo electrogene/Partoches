@@ -130,7 +130,7 @@ trumpetUn =  \transpose sib do \piccolo
 trumpetDeux =  \transpose sib do' \piccoloDeux
 trumpetTrois =  \transpose sib do \piccoloTrois
 saxAltoUn = \transpose mib do \piccolo
-saxAltoDeux = \transpose mib do \piccoloDeux
+saxAltoDeux = \transpose mib, do \piccoloDeux
 saxAltoTrois = \transpose mib do \piccoloTrois
 
 
