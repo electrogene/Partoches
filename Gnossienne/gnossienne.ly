@@ -3,8 +3,8 @@
 
 \header {
   title = "Gnossienne No.1"
-  subtitle = ""
-  composer = "Le Groupe Electrogène Fanfare Club"
+  subtitle = "Le Groupe Electrogène Fanfare Club"
+  composer = "Erik Satie"
 }
 
 global = {
@@ -264,7 +264,7 @@ saxAltoTrois = \transpose mib do \piccoloTrois
   \paper {
 
   }
-  \header { poet = "Trompettes/Sax Tenor/Trombone/Clarinette" }
+  \header { poet = "Trompettes/Sax Sib/Trombone/Clarinette/Cor Iranien" }
   \score {
     <<
       \new Staff \trumpetUn
@@ -294,7 +294,7 @@ saxAltoTrois = \transpose mib do \piccoloTrois
   \paper {
 
   }
-  \header { poet = "Piccolo et tout ce qu'il y'a d'autre en Do" }
+  \header { poet = "Piccolo et autres instrus en Do" }
   \score {
     <<
       \new Staff \piccolo
