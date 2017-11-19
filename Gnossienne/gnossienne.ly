@@ -32,9 +32,9 @@ voixUn= \repeat volta 2 {
   (re2) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2 \bar "||"
   \break
   
-  r8^\markup { \huge D} la8 re mi fa sol si sol fa4 (fa2) r4
-  r8 la,8 re mi fa sol si sol fa4 (fa2) r4
-  r8 la,8 re mi fa sol si sol fa4. mi8 fa4. mi8 fa4. la8\staccato sol\staccato fa\staccato mi\staccato re8\staccato (re4) mi8\staccato fa2\staccato r8 \bar "||"
+  r8^\markup { \huge D} la8 si do re fa la fa re4 (re2) r4
+  r8 la8 si do re fa la fa re4 (re2) r4
+  r8 la8 si do re fa la fa fa4. mi8 fa4. mi8 fa4. la8\staccato sol\staccato fa\staccato mi\staccato re8\staccato (re4) mi8\staccato fa2\staccato r8 \bar "||"
   \break
   r2^\markup { \huge E \huge joué \huge puis \huge chanté} re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2
   (re2) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2 \break
@@ -98,8 +98,8 @@ r1^\markup { \huge B} re dod do si re dod do si sib re2 fa do1 (do2) re4 mi fa s
  r1^\markup { \huge C} re' dod do si re dod do si fa4 sol la sib4. la8 sol4 (sol8) la8 sib4. la8 sol la sol fa mi4 re2 fa4 sol la sib4. la8 sol4 (sol8) la8 sib4. la8 sol la sol fa mi4 re2 \bar "||"
   \break
  
-  r1^\markup { \huge D} r8 la8 re mi fa sol si sol fa4 (fa2) r4
- r8 la,8 re mi fa sol si sol fa4 (fa2) r4
+  r1^\markup { \huge D} r8 la8 si do re fa la fa re4 (re2) r4
+ r8 la8 si do re fa la fa re4 (re2) r4
  fa4. mi8 fa4. mi8 fa4. la8\staccato sol\staccato fa\staccato mi\staccato re8\staccato (re4) mi8\staccato fa2 r8 \bar "||"
   \break
  r2^\markup { \huge E \huge joué \huge puis \huge chanté} re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2
