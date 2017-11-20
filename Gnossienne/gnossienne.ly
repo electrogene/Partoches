@@ -62,8 +62,8 @@ re8^\markup { \huge intro} <la' re>8 r8 <la re>8 r8 <la re>8 r8 <la re>8 re,8 <l
  r1^\markup { \huge B} re dod do si re dod do si sib re2 fa do1 (do2) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2 \bar "||"
   \break
   
-  r1^\markup { \huge C} re' dod do si re dod do si 
-  fa4 sol la sib4. la8 sol4 (sol8) la8 sib4. la8 sol la sol fa mi4 re2 fa4 sol la sib4. la8 sol4 (sol8) la8 sib4. la8 sol la sol fa mi4 re2 \bar "||"
+  r1^\markup { \huge C} re' dod do si re dod do si2 
+  fa4 sol la sib4. la8 sol4 (sol8) la8 sib4. la8 sol la sol fa mi4 re2 (re2) fa4 sol la sib4. la8 sol4 (sol8) la8 sib4. la8 sol la sol fa mi4 re2 \bar "||"
   \break
  
  r1^\markup { \huge D} r8 re8 r8 re8 r8 re8 r8 re8
@@ -95,7 +95,7 @@ r1^\markup { \huge intro} r r r r re1 r^\markup { \huge A}
 r1^\markup { \huge B} re dod do si re dod do si sib re2 fa do1 (do2) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2 \bar "||"
   \break 
   
- r1^\markup { \huge C} re' dod do si re dod do si fa4 sol la sib4. la8 sol4 (sol8) la8 sib4. la8 sol la sol fa mi4 re2 fa4 sol la sib4. la8 sol4 (sol8) la8 sib4. la8 sol la sol fa mi4 re2 \bar "||"
+ r1^\markup { \huge C} re' dod do si re dod do si2 fa4 sol la sib4. la8 sol4 (sol8) la8 sib4. la8 sol la sol fa mi4 re2 (re) fa4 sol la sib4. la8 sol4 (sol8) la8 sib4. la8 sol la sol fa mi4 re2 \bar "||"
   \break
  
   r1^\markup { \huge D} r8 la8 si dod re fa la fa re4 (re2) r4
