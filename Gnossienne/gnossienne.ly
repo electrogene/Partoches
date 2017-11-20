@@ -18,26 +18,26 @@ voixUn= \repeat volta 2 {
 
   r1^\markup { \huge intro}  r r r r r
   r4^\markup { \huge A} la'8 do si4. la8 lab2 lab r4 la8 do si4. la8 re2 re r4 la8 do si4. la8 lab4. fa8 mi4. fa8 mi4. fa8 mi8 re8 mi8 fa8 mi4 re2.
-  (re2) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2
-  (re2) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2 \bar "||"
+  (re4) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2.
+  (re4) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2. \bar "||"
   \break
   
   r4^\markup { \huge B} la'8 do si4. la8 lab2 lab r4 la8 do si4. la8 re2 re r4 la8 do si4. la8 lab4. fa8 mi4. fa8 mi4. fa8 mi8 re8 mi8 fa8 mi4 re2.
-  (re2) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2
-  (re2) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2 \bar "||"
+  (re4) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2.
+  (re4) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2. \bar "||"
   \break
  
  r4^\markup { \huge C} la'8 do si4. la8 lab2 lab r4 la8 do si4. la8 re2 re r4 la8 do si4. la8 lab4. fa8 mi4. fa8 mi4. fa8 mi8 re8 mi8 fa8 mi4 re2.
-  (re2) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2
-  (re2) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2 \bar "||"
+  (re4) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2.
+  (re4) re4 mi fa sol4. fa8 mi4. fa8 sol4. fa8 mi re mi fa mi4 re2. \bar "||"
   \break
   
   r8^\markup { \huge D} la8 si dod re fa la fa re4 (re2) r4
   r8 la8 si dod re fa la fa re4 (re2) r4
   r8 la8 si dod re fa la fa fa4. mi8 fa4. mi8 fa4. la8\staccato sol\staccato fa\staccato mi\staccato re8\staccato (re4) mi8\staccato fa2\staccato r8 \bar "||"
   \break
-  r2^\markup { \huge E \huge joué \huge puis \huge chanté} re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2
-  (re2) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2 \break
+  r4^\markup { \huge E \huge joué \huge puis \huge chanté} re4 mi fa sol4. fa8 mi4. fa8 sol4. fa8 mi re mi fa mi4 re2.
+  (re4) re4 mi fa sol4. fa8 mi4. fa8 sol4. fa8 mi re mi fa mi4 re2. \break
   
 }
 
@@ -59,11 +59,11 @@ re8^\markup { \huge intro} <la' re>8 r8 <la re>8 r8 <la re>8 r8 <la re>8 re,8 <l
   do,8 <sol' do>8 r8 <sol do>8 r8 <sol do>8 r8 <sol do>8 \bar "||"
   \break
  
- r1^\markup { \huge B} re dod do si re dod do si sib re2 fa do1 (do2) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2 \bar "||"
+ r1^\markup { \huge B} re dod do si re dod do si sib re2 fa do1 (do4) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2. \bar "||"
   \break
   
-  r1^\markup { \huge C} re' dod do si re dod do si2 
-  fa4 sol la sib4. la8 sol4 (sol8) la8 sib4. la8 sol la sol fa mi4 re2 (re2) fa4 sol la sib4. la8 sol4 (sol8) la8 sib4. la8 sol la sol fa mi4 re2 \bar "||"
+  r1^\markup { \huge C} re' dod do si re dod do si4 
+  fa4 sol la sib4. la8 sol4 (sol8) la8 sib4. la8 sol la sol fa mi4 re2. (re4) fa4 sol la sib4. la8 sol4. la8 sib4. la8 sol la sol fa mi4 re2. \bar "||"
   \break
  
  r1^\markup { \huge D} r8 re8 r8 re8 r8 re8 r8 re8
@@ -92,18 +92,18 @@ r1^\markup { \huge intro} r r r r re1 r^\markup { \huge A}
   < re re'>1 <dod dod'> <do do'>  <si si'> <re re'> <dod dod'> <do do'> <si si'> <sib sib'> <re re'>2 <fa fa'> <do do'>1 <si si'> <sib sib'> <re re'>2 <fa fa'> <do do'>1 \bar "||"
   \break
   
-r1^\markup { \huge B} re dod do si re dod do si sib re2 fa do1 (do2) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2 \bar "||"
+r1^\markup { \huge B} re dod do si re dod do si sib re2 fa do1 (do4) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2. \bar "||"
   \break 
   
- r1^\markup { \huge C} re' dod do si re dod do si2 fa4 sol la sib4. la8 sol4 (sol8) la8 sib4. la8 sol la sol fa mi4 re2 (re) fa4 sol la sib4. la8 sol4 (sol8) la8 sib4. la8 sol la sol fa mi4 re2 \bar "||"
+ r1^\markup { \huge C} re' dod do si re dod do si4 fa4 sol la sib4. la8 sol4 (sol8) la8 sib4. la8 sol la sol fa mi4 re2. (re4) fa4 sol la sib4. la8 sol4. la8 sib4. la8 sol la sol fa mi4 re2. \bar "||"
   \break
  
   r1^\markup { \huge D} r8 la8 si dod re fa la fa re4 (re2) r4
  r8 la8 si dod re fa la fa re4 (re2) r4
  fa4. mi8 fa4. mi8 fa4. la8\staccato sol\staccato fa\staccato mi\staccato re8\staccato (re4) mi8\staccato fa2 r8 \bar "||"
   \break
- r2^\markup { \huge E \huge joué \huge puis \huge chanté} re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2
-  (re2) re4 mi fa sol4. fa8 mi4 (mi8) fa8 sol4. fa8 mi re mi fa mi4 re2 \break
+ r4^\markup { \huge E \huge joué \huge puis \huge chanté} re4 mi fa sol4. fa8 mi4. fa8 sol4. fa8 mi re mi fa mi4 re2.
+  (re4) re4 mi fa sol4. fa8 mi4. fa8 sol4. fa8 mi re mi fa mi4 re2. \break
    }
 
 
