@@ -2,7 +2,7 @@
 \language "français"
 
 \header {
-  title = "海闊天空1"
+  title = "海闊天空"
   subtitle = "Le Groupe Electrogène Fanfare Club"
   composer = "Beyond"
 }
