@@ -2,9 +2,9 @@
 \language "français"
 
 \header {
-  title = "Dans les yeux d'Emilie"
-  subtitle = ""
-  composer = "Le Groupe Electrogène Fanfare Club"
+  title = "Dans les yeux d'Emile Louis"
+  subtitle = "Le Groupe Electrogène Fanfare Club"
+  composer = "Joe Dassin"
 }
 
 global = {
@@ -64,7 +64,7 @@ re2 mi fa1 \bar "|."
 voixBasse= \repeat volta 2 {
 \set Score.repeatCommands = #'((volta "1-5") end-repeat)
 
- fa,,,8.^\markup { \huge On \huge joue (tout le temps) } fa16 fa8 fa4 fa8 fa fa fa8. fa16 fa8 fa4 fa8 fa fa 
+ fa,,8.^\markup { \huge On \huge joue (tout le temps) } fa16 fa8 fa4 fa8 fa fa fa8. fa16 fa8 fa4 fa8 fa fa 
  \set Score.repeatCommands = #'((volta #f))
 do'8. do16 do8 do4 do8 do do do8. do16 do8 do4 do8 do do re8. re16 re8 re4 re8 re re re8. re16 re8 re4 re8 re re do8. do16 do8 do4 do8 do do do4 sib la sol
 fa8. fa16 fa8 fa4 fa8 fa fa fa8. fa16 fa8 fa4 fa8 fa fa do'8. do16 do8 do4 do8 do do do8. do16 do8 do4 do8 do do re8. re16 re8 re4 re8 re re re8. re16 re8 re4 re8 re re 
@@ -95,17 +95,21 @@ tuba =  \relative do'' {
   \voixBasse
 }
 
-piccolo =  \transpose do' sib \trumpetUn
-saxAltoUn =  \transpose mib sib \trumpetUn
-saxAltoDeux =  \transpose mib sib \trumpetDeux
+piccolo =  \transpose  do fa  \trumpetUn
+trumpetTrois = \transpose sib fa \trumpetUn
+trumpetQuatre = \transpose sib fa \trumpetDeux
+tubaDeux = \transpose sib fa \tuba
+saxAltoTrois =  \transpose lab sib \trumpetUn
+saxAltoQuatre =  \transpose lab sib \trumpetDeux
+
 
 \book {
-  \bookOutputSuffix "trumpet1"
+  \bookOutputSuffix "trumpet3"
   \score {
     \new Staff \with {
-      instrumentName = "Trompette 1"
+      instrumentName = "Trompette 3"
       midiInstrument = "trumpet"
-    } \trumpetUn
+    } \trumpetTrois
     \layout { }
     \midi {
       \tempo 4=140
@@ -114,12 +118,12 @@ saxAltoDeux =  \transpose mib sib \trumpetDeux
 }
 
 \book {
-  \bookOutputSuffix "trumpet2"
+  \bookOutputSuffix "trumpet4"
   \score {
     \new Staff \with {
-      instrumentName = "Trompette 2"
+      instrumentName = "Trompette 4"
       midiInstrument = "trumpet"
-    } \trumpetDeux
+    } \trumpetQuatre
     \layout { }
     \midi {
       \tempo 4=140
@@ -141,13 +145,31 @@ saxAltoDeux =  \transpose mib sib \trumpetDeux
   }
 }
 
+
+
 \book {
-  \bookOutputSuffix "tuba"
+  \bookOutputSuffix "tuba2"
   \score {
     \new Staff \with {
-      instrumentName = "Tuba"
+      instrumentName = "Tuba 2"
       midiInstrument = "tuba"
-    } \tuba
+    } \tubaDeux
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+
+
+\book {
+  \bookOutputSuffix "sax_alto3"
+  \score {
+    \new Staff \with {
+      instrumentName = "Sax alto 3"
+      midiInstrument = "sax alto"
+    } \saxAltoTrois
     \layout { }
     \midi {
       \tempo 4=140
@@ -156,12 +178,12 @@ saxAltoDeux =  \transpose mib sib \trumpetDeux
 }
 
 \book {
-  \bookOutputSuffix "sax_alto1"
+  \bookOutputSuffix "sax_alto4"
   \score {
     \new Staff \with {
-      instrumentName = "Sax alto 1"
+      instrumentName = "Sax alto 4"
       midiInstrument = "sax alto"
-    } \saxAltoUn
+    } \saxAltoQuatre
     \layout { }
     \midi {
       \tempo 4=140
@@ -170,16 +192,31 @@ saxAltoDeux =  \transpose mib sib \trumpetDeux
 }
 
 \book {
-  \bookOutputSuffix "sax_alto2"
+  \paper {
+
+  }
+  \header { poet = "Trompettes/Sax Sib/Trombone/Clarinette/Cor Iranien" }
   \score {
-    \new Staff \with {
-      instrumentName = "Sax alto 2"
-      midiInstrument = "sax alto"
-    } \saxAltoDeux
-    \layout { }
-    \midi {
-      \tempo 4=140
-    }
+    <<
+      \new Staff \trumpetTrois
+      \new Staff \trumpetQuatre
+ 
+
+    >>
   }
 }
 
+\book {
+  \paper {
+
+  }
+  \header { poet = "Sax MiB" }
+  \score {
+    <<
+      \new Staff \saxAltoTrois
+      \new Staff \saxAltoQuatre
+ 
+
+    >>
+  }
+}
