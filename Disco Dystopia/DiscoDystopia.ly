@@ -103,37 +103,38 @@ voixmedium = \relative do'
 
 voixbasse = \relative do
 {
-  \key mi \minor
+   \key mi \minor
   % Refrain
   \mark \default
-    mi2. fad8 sol8
-  ~ sol2. sol8 sol8
-  ~ sol2. sol8 fad8
-  ~ fad1
-   r4 mi2 fad8 sol8
-   ~ sol2. sol8 sol8
-   ~ sol2. sol8 fad8
-   ~ fad1
+    re2. mi8 fad8
+  ~ fad2. fad8 fad8
+  ~ fad2. fad8 mi8
+  ~ mi1
+   r4 re2 mi8 fad8
+   ~ fad2. fad8 fad8
+   ~ fad2. fad8 mi8
+   ~ mi1
+
   \break
   % Couplet
   \mark \default
   \repeat volta 2
   {
-    mi8. mi16 ~mi8 re mi4 r8 si16 re
-    mi8. mi16 ~mi8 re mi mi fad sol
-    la8. la16 ~la8 sol la4 r8 mi16 sol
-    la8. la16 ~la8 sol si si la sol
+    re8. re16 ~re8 do re4 r8 la16 do
+    re8. re16 ~re8 do re re mi fad
+    sol8. sol16 ~sol8 fad sol4 r8 re16 fad
+    sol8. sol16 ~sol8 fad la la sol fad
   }
   \break
   % Final
   \mark \default
-  \tuplet 3/2 { mi4 mi fad } fad r
+  \tuplet 3/2 { re4 re mi } mi r
   r1
-  \tuplet 3/2 { sol4 sol la } la r
+  \tuplet 3/2 { fad4 fad sol } sol r
   r1
- \tupletSpan 2 \tuplet 3/2 { si4 si do la si ~si }
+ \tupletSpan 2 \tuplet 3/2 { la4 la si sol la ~la }
   r1
-  mi,4 r2.
+  re,4 r2.
 }
 
 % Association instruments / Voix
@@ -155,14 +156,14 @@ trompettemedium = {
 tuba = {
   %\transposition sib
   \clef bass
-  \transpose sib sib,
+  \transpose do sib,
   \voixbasse
 }
 
 baryton = {
  %\transposition mib
   \clef treble
-  \transpose sib mib''
+  \transpose mib,, do
   \voixbasse
 }
 
