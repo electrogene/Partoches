@@ -103,16 +103,16 @@ voixmedium = \relative do'
 
 voixbasse = \relative do
 {
-   \key mi \minor
+   \key re \minor
   % Refrain
   \mark \default
-    re2. mi8 fad8
-  ~ fad2. fad8 fad8
-  ~ fad2. fad8 mi8
+    re2. mi8 fa8
+  ~ fa2. fa8 fa8
+  ~ fa2. fa8 mi8
   ~ mi1
-   r4 re2 mi8 fad8
-   ~ fad2. fad8 fad8
-   ~ fad2. fad8 mi8
+   r4 re2 mi8 fa8
+   ~ fa2. fa8 fa8
+   ~ fa2. fa8 mi8
    ~ mi1
 
   \break
@@ -121,18 +121,18 @@ voixbasse = \relative do
   \repeat volta 2
   {
     re8. re16 ~re8 do re4 r8 la16 do
-    re8. re16 ~re8 do re re mi fad
-    sol8. sol16 ~sol8 fad sol4 r8 re16 fad
-    sol8. sol16 ~sol8 fad la la sol fad
+    re8. re16 ~re8 do re re mi fa
+    sol8. sol16 ~sol8 fa sol4 r8 re16 fa
+    sol8. sol16 ~sol8 fa la la sol fa
   }
   \break
   % Final
   \mark \default
   \tuplet 3/2 { re4 re mi } mi r
   r1
-  \tuplet 3/2 { fad4 fad sol } sol r
+  \tuplet 3/2 { fa4 fa sol } sol r
   r1
- \tupletSpan 2 \tuplet 3/2 { la4 la si sol la ~la }
+ \tupletSpan 2 \tuplet 3/2 { la4 la sib sol la ~la }
   r1
   re,4 r2.
 }
