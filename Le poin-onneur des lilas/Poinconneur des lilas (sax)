@@ -1,0 +1,96 @@
+\version "2.18.2"
+\language "français"
+
+\header {
+  title = "Le poinçonneur des Lilas"
+  subtitle = "Le Groupe électrogène Fanfare Club (from Pistons Circus)"
+  composer = "Serge Gainsbourg"
+}
+
+global = {
+  \key re \minor
+  \time 4/4
+  \tempo 4=120
+}
+
+Sax = \relative do' {
+  \global
+  \transposition do
+ r8 fa' r fa r fa r fa r8 fa r fa r fa r fa r8 fa r fa r fa r fa  r8 fa r fa r fa r fa \bar "||" 
+ la,4 sib8 do sib4 sol8 fa la2. r8 la re re re re do la fa sol sol2. r4 
+ re' re8 re re4 do8 sib do re do4. do8 sib la sib do sib4. sib8 la sol la la la la la la la la la la la la (la4) r4 
+ la4 sib8 do sib4 sol8 fa la2. r8 la re re re re do la fa sol sol2. r4
+ fa'4 fa8 fa fa4 mi8 re mi fa mi4. mi8 re do re mi re4. re8 do sib la la la la la la la la la la la la (la4) r4 \bar "||" 
+ re8 re re4 fa8 fa fa4 mi8. do16 do8 do re4. r8 re8 re re4 fa8 fa fa4 mi8. do16 do8 do re4. r8
+ re4 mi fa fa fa2 fa mi4 mi do mi mi2 re 
+ re8 re re4 fa8 fa fa4 mi8. do16 do8 do re4. r8
+ re8 re re4 fa8 fa fa4 mi8. do16 do8 do re do mi do re do mi do re do mi do \time 2/4 re8 do mi do 
+ \time 4/4 la1 (la4) fa' mi mib \bar "||" re2. r4  r1 r
+ r2 r4 r8 re fa2 mi mi do re4 re fa re re r8 re4 r8 re4 dod r8 dod4.. r16 r8 r8  fa, r fa r fa r fa r8 fa r fa r fa r fa r8 fa r fa r fa r fa r8 sol r sol r sol r re' fa2 mi mi do re4 re fa re re r8 re4 r8 re4 dod r8 dod4.. r16 r8  \bar "||" 
+ r1 r2 r8 fa16 mi fa8 fa r1 r2 r8 fa16 mi fa8 fa
+ re4 mi fa la la2 sol la4 sol mi sol sol2 fa r1 r2 r8 fa16 mi fa8 fa r1 r2 r8 la, r sol r la r sol r la r sol \time 2/4 r la r sol
+ \time 4/4 la1 (la2.) r4 \bar "||" 
+ r8 re8 re re r re re re r8 re8 re re r re re re r8 re8 re re r re re re
+ r8 re mi re fa mi re do sib4 sib8 sib sib4 la8 sol la sib la4. la8 sol fa sol la sol4. sol8 fa mi fa4 r8 fa4 r8 fa4 sol r8 sol4.. r16 r8 \bar "||"
+ re'2 re mi fa la fa re2. r4 fa2 \tuplet 3/2 {mi4 sol fa} mi2 r8 re fa mi re2 r8 re do sib la4 r r2 r2 r8 la'4. \bar "||" 
+ r1 r2 r8 fa16 mi fa8 fa r1 r2 r8 fa16 mi fa8 fa
+ re4 mi fa la la2 sol la4 sol mi sol sol2 fa r1 r2 r8 fa16 mi fa8 fa r1 
+ r2 r8 re r do r re r do r re r do \time 2/4 r re r do \time 4/4 re1 (re2.) la'4 re, r r2 \bar "|."
+}
+ 
+ 
+
+ 
+ \book {
+  \bookOutputSuffix "sax_tenor1"
+  \score {
+    \new Staff \with {
+      instrumentName = "Sax Tenor"
+      midiInstrument = "sax tenor"
+    } \Sax
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+saxalto = {
+  \transposition mib
+  \transpose mib sib
+  \Sax
+}
+
+ \book {
+  \bookOutputSuffix "saxalto"
+  \score {
+    \new Staff \with {
+      instrumentName = "Sax Alto"
+      midiInstrument = "sax alto"
+    } \saxalto
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+baryton = {
+ \transposition mib
+  \transpose mib' sib
+  \Sax
+}
+
+ \book {
+  \bookOutputSuffix "baryton"
+  \score {
+    \new Staff \with {
+      instrumentName = "Baryton"
+      midiInstrument = "baritone sax"
+    } \baryton
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
