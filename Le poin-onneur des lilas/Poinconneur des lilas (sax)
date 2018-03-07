@@ -44,7 +44,7 @@ Sax = \relative do' {
 
  
  \book {
-  \bookOutputSuffix "sax_tenor1"
+  \bookOutputSuffix "saxtenor"
   \score {
     \new Staff \with {
       instrumentName = "Sax Tenor"
