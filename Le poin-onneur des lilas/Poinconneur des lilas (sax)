@@ -57,25 +57,6 @@ Sax = \relative do' {
   }
 }
 
-saxtenor = {
-  \transposition sib
-  \transpose sib, do
-  \Sax
-}
-
- \book {
-  \bookOutputSuffix "tenor2"
-  \score {
-    \new Staff \with {
-      instrumentName = "tenor2"
-      midiInstrument = "tenor2"
-    } \saxtenor
-    \layout { }
-    \midi {
-      \tempo 4=140
-    }
-  }
-}
 
 saxalto = {
   \transposition mib
@@ -90,26 +71,6 @@ saxalto = {
       instrumentName = "Sax Alto"
       midiInstrument = "sax alto"
     } \saxalto
-    \layout { }
-    \midi {
-      \tempo 4=140
-    }
-  }
-}
-
-baryton = {
- \transposition mib
-  \transpose mib' sib
-  \Sax
-}
-
- \book {
-  \bookOutputSuffix "baryton"
-  \score {
-    \new Staff \with {
-      instrumentName = "Baryton"
-      midiInstrument = "baritone sax"
-    } \baryton
     \layout { }
     \midi {
       \tempo 4=140
