@@ -3,7 +3,7 @@
 
 \header {
   title = "Le poinçonneur des Lilas"
-  subtitle = "Le Groupe électrogène Fanfare Club (from Piston Circus)"
+  subtitle = "Le Groupe électrogène Fanfare Club (from Pistons Circus)"
   composer = "Serge Gainsbourg"
 }
 
@@ -18,11 +18,9 @@ Sax = \relative do' {
   \transposition do
  r8  <fa' la,> r <fa la,> r <fa sib,> r <fa sib,> r8 <fa si,> r <fa si,> r <fa sib,> r <fa sib,> r8  <fa la,> r <fa la,> r <fa sib,> r <fa sib,> r8 <fa si,> r <fa si,> r <fa sib,> r <fa sib,> \bar "||" 
  la,4 sib8 do sib4 sol8 fa la2. r8 la re re re re do la fa sol sol2. r4 
- fa'4 fa8 fa fa4 mi8 re mi fa mi4. mi8 re do re mi re4. re8 do sib
- la la la la la la la la la la la la (la4) r4 
+ re' re8 re re4 do8 sib do re do4. do8 sib la sib do sib4. sib8 la sol la la la la la la la la la la la la (la4) r4 \bar "||" 
  la4 sib8 do sib4 sol8 fa la2. r8 la re re re re do la fa sol sol2. r4
- <re' fa> <re fa>8 <re fa> <re fa>4 <do mi>8 <sib re> <do mi> <re fa> <do mi>4. <do mi>8 <sib re> <la do> <sib re> <do mi> <sib re>4. <sib re>8 <la do> <sol sib> 
- la la la la la la la la la la la la (la4) r4 \bar "||" 
+re' re8 re re4 do8 sib do re do4. do8 sib la sib do sib4. sib8 la sol la la la la la la la la la la la la (la4) r4 \bar "||" 
  re8 re re4 fa8 fa fa4 mi8. do16 do8 do re4. r8 re8 re re4 fa8 fa fa4 mi8. do16 do8 do re4. r8
  re4 < dod mi> <do fa> <do fa> <do fa>2 <sib fa'> <sol mi'>4 <sol mi'> <sol do> <sib mi> <sib mi>2 <la re> 
  re8 re re4 fa8 fa fa4 mi8. do16 do8 do re4. r8
@@ -44,7 +42,7 @@ Sax = \relative do' {
 
  
  \book {
-  \bookOutputSuffix "saxtenor"
+  \bookOutputSuffix "sax tenor"
   \score {
     \new Staff \with {
       instrumentName = "Sax Tenor"
@@ -65,7 +63,7 @@ saxalto = {
 }
 
  \book {
-  \bookOutputSuffix "saxalto"
+  \bookOutputSuffix "sax alto"
   \score {
     \new Staff \with {
       instrumentName = "Sax Alto"
@@ -77,3 +75,4 @@ saxalto = {
     }
   }
 }
+
