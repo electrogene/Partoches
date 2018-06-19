@@ -14,7 +14,7 @@ global = {
 
 
 voixUn= \repeat volta 2 {
-\set Staff.instrumentName = "Bass "
+\set Staff.instrumentName = "Basse"
 
 \time 12/8 
 mi4. si mi si8 dod red |
@@ -148,9 +148,125 @@ mi4 r4 r2 |
   }
 
 voixTrois= \repeat volta 2 {
+\set Staff.instrumentName = "Trompette 2"
+\time 12/8 
+r1. | r | r| r |
+r8 sol' sol r8 sol sol r la la r la la |
+r8 sol sol r8 sol sol r sol sol r sol sol |
+r8 sol sol r8 sol sol r la la r la la |
+r8 sol sol r8 sol sol r sol sol r sol sol |
+r8 do do  r8 do do  r si si  r si si  |
+r8 sol sol r8 sol sol r sol sol r sol sol |
+r8 sol sol r8 sol sol r la la r la la |
+r8 sol sol r8 sol sol r sol sol r sol sol |
+r8 sol sol r8 sol sol r la la r sol sol |
+sol16 mi re8 mi r r1
+r8 sol sol r8 sol sol r la la r la la |
+r8 sol sol r8 sol sol r sol sol r sol sol |
+r8 sol sol r8 sol sol r la la r la la |
+r8 sol sol r8 sol sol r sol sol r sol sol |
+r8 do do  r8 do do  r si si  r si si  |
+r8 sol sol r8 sol sol r sol sol r sol sol |
+r8 sol sol r8 sol sol r la la r la la |
+r8 sol sol r8 sol sol r sol sol r sol sol |
+r8 sol sol r8 sol sol r la la r sol sol |
+sol16 mi re8 mi r r1 \bar "||" \break 
 
+\time 4/4
+r1 | r1 | 
+r2 r16 si re si si8 red | 
+mi4 r4 r16 si re si si8 red | 
+mi4 r4 r16 si re si si8 red | 
+si4 dod re  red |
+mi r r16  mi sol mi sol 8sold8 |
+la4 r r16  mi sol mi sol 8sold8 |
+la4 r4 r16 si, re si si8 red | 
+mi4 r4 r16 si re si si8 red | 
+si'2 lad4 la |
+sold2 r |
+r2 r16 si, re si si8 red | 
+mi4 r4 r16 si re si si8 red | 
+mi4 r4 r16 si re si si8 red | 
+si4 dod re  red |
+mi r r16  mi sol mi sol 8sold8 |
+la4 r r16  mi sol mi sol 8sold8 |
+la4 r4 r16 si, re si si8 red | 
+mi4 r4 r16 si re si si8 red | 
+si'2 lad4 la |
+sold2 r |
+r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 |
+r2 r16 si, re si si8 red | 
+mi4 r4 r16 si re si si8 red | 
+mi4 r4 r16 si re si si8 red | 
+si4 dod re  red |
+mi r r16  mi sol mi sol 8sold8 |
+la4 r r16  mi sol mi sol 8sold8 |
+la4 r4 r16 si, re si si8 red | 
+mi4 r4 r16 si re si si8 red | 
+si'2 lad4 la |
+sold2 r |
 
    }
+
+
+voixQuatre= \repeat volta 2 {
+\set Staff.instrumentName = "Sax 1"
+
+\time 12/8 
+r1. | r | r| r |
+sol2 fad8 sol la4. la8 sol fad |
+sol mi4 r8 r1 |
+sol2 fad8 sol la4. la8 sol fad |
+sol mi4 r8 r1 |
+do'4. si4 sol8 fad2 sol8 la do4. si4 mi8 do si sol fad mi red |
+sol2 fad8 sol la4. la8 sol fad |
+sol mi4 r8 r1 |
+sol4. fad fa mi |
+r1. |
+sol2 fad8 sol la4. la8 sol fad |
+sol mi4 r8 r1 |
+sol2 fad8 sol la4. la8 sol fad |
+sol mi4 r8 r1 |
+do'4. si4 sol8 fad2 sol8 la do4. si4 mi8 do si sol fad mi red |
+sol2 fad8 sol la4. la8 sol fad |
+sol mi4 r8 r1 |
+sol4. fad fa mi |
+r1. | \bar "||" \break 
+
+\time 4/4
+r1 | r1 | 
+mi8. re16 mi re mi re mi r r8 r4 |
+mi8. re16 mi re mi re mi r r8 r4 |
+mi8. re16 mi re mi re mi r r8 r4 |
+sol4 la si re |
+do4.si16 do r2 |
+\times 2/3 {do8 do do } \times 2/3 {do8 si do} do4 r4
+mi,8. re16 mi re mi re mi r r8 r4 |
+mi8. re16 mi re mi re mi r r8 r4 |
+sol,4 fad fa mi (mi4) r4 r2 |
+mi'8. re16 mi re mi re mi r r8 r4 |
+mi8. re16 mi re mi re mi r r8 r4 |
+mi8. re16 mi re mi re mi r r8 r4 |
+sol4 la si re |
+do4.si16 do r2 |
+\times 2/3 {do8 do do } \times 2/3 {do8 si do} do4 r4
+mi,8. re16 mi re mi re mi r r8 r4 |
+mi8. re16 mi re mi re mi r r8 r4 |
+sol,4 fad fa mi (mi4) r4 r2 |
+r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 | r1 |
+mi'8. re16 mi re mi re mi r r8 r4 |
+mi8. re16 mi re mi re mi r r8 r4 |
+mi8. re16 mi re mi re mi r r8 r4 |
+sol4 la si re |
+do4.si16 do r2 |
+\times 2/3 {do8 do do } \times 2/3 {do8 si do} do4 r4
+mi,8. re16 mi re mi re mi r r8 r4 |
+mi8. re16 mi re mi re mi r r8 r4 |
+sol,4 fad fa mi (mi4) r4 r2 |
+
+
+}
+
 
 
 piccolo =  \relative do'' {
@@ -168,15 +284,21 @@ piccoloTrois =  \relative do'' {
   \voixTrois
 }
 
+piccoloQuatre =  \relative do'' {
+  \global
+  \voixQuatre
+}
+
 
 piccolo =  \transpose do do \piccolo
 piccoloDeux =  \transpose do' do \piccoloDeux
 piccoloTrois =  \transpose do do \piccoloTrois
+piccoloQuatre =  \transpose do do \piccoloQuatre
 BassUn =  \transpose sib do \piccolo
 trumpetUn =  \transpose sib do' \piccoloDeux
 trumpetDeux =  \transpose sib do \piccoloTrois
 BarytonUn = \transpose mib do \piccolo
-saxAltoUn = \transpose mib, do \piccoloDeux
+saxAltoUn = \transpose mib, do \piccoloQuatre
 saxAltoDeux = \transpose mib do \piccoloTrois
 
 
@@ -227,7 +349,7 @@ saxAltoDeux = \transpose mib do \piccoloTrois
   \score {
     \new Staff \with {
       instrumentName = "Piccolo"
-      midiInstrument = "piccolo"
+      midiInstrument = "acoustic grand"
     } \piccolo
     \layout { }
     \midi {
@@ -241,7 +363,7 @@ saxAltoDeux = \transpose mib do \piccoloTrois
   \score {
     \new Staff \with {
       instrumentName = "Piccolo 2"
-      midiInstrument = "piccolo"
+      midiInstrument = "acoustic grand"
     } \piccoloDeux
     \layout { }
     \midi {
@@ -255,8 +377,22 @@ saxAltoDeux = \transpose mib do \piccoloTrois
   \score {
     \new Staff \with {
       instrumentName = "Piccolo 3"
-      midiInstrument = "piccolo"
+      midiInstrument = "acoustic grand"
     } \piccoloTrois
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "piccolo4"
+  \score {
+    \new Staff \with {
+      instrumentName = "Piccolo 4"
+      midiInstrument = "acoustic grand"
+    } \piccoloQuatre
     \layout { }
     \midi {
       \tempo 4=140
@@ -310,11 +446,13 @@ saxAltoDeux = \transpose mib do \piccoloTrois
   \paper {
 
   }
-  \header { poet = "Sib" }
+  \header { poet = "" }
   \score {
     <<
       \new Staff \BassUn
       \new Staff \trumpetUn
+      \new Staff \trumpetDeux
+      \new Staff \saxAltoUn
 
 
     >>
