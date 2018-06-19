@@ -14,6 +14,7 @@ global = {
 
 
 voixUn= \repeat volta 2 {
+\set Staff.instrumentName = "Bass "
 
 \time 12/8 
 mi4. si mi si8 dod red |
@@ -87,6 +88,7 @@ r1 | r1 |
 }
 
 voixDeux= \repeat volta 2 {
+\set Staff.instrumentName = "Trompette 1 "
 
 \time 12/8 
 r1. | r | r| r |
