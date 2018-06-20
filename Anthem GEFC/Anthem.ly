@@ -295,12 +295,12 @@ piccolo =  \transpose do do \piccolo
 piccoloDeux =  \transpose do' do \piccoloDeux
 piccoloTrois =  \transpose do do \piccoloTrois
 piccoloQuatre =  \transpose do do \piccoloQuatre
-BassUn =  \transpose sib do \piccolo
-trumpetUn =  \transpose sib do' \piccoloDeux
-trumpetDeux =  \transpose sib do \piccoloTrois
-BarytonUn = \transpose mib do \piccolo
-saxAltoUn = \transpose mib, do \piccoloQuatre
-saxTenorUn = \transpose sib do' \piccoloCinq
+BassUn =  \transpose do do, \piccolo
+trumpetUn =  \transpose do do \piccoloDeux
+trumpetDeux =  \transpose do do, \piccoloTrois
+BarytonUn = \transpose fa do \piccolo
+saxAltoUn = \transpose fa, do \piccoloQuatre
+saxTenorUn = \transpose do do \piccoloCinq
 
 
 \book {
