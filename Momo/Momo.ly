@@ -7,7 +7,7 @@
 }
 
 global = {
-  \key sol \minor
+  \key re \minor
   \time 4/4
 }
 
@@ -171,15 +171,16 @@ piccoloCinq =  \relative do'' {
 }
 
 
-piccolo =  \transpose do do \piccolo
+piccolo =  \transpose do do, \piccolo
 piccoloDeux =  \transpose do' do \piccoloDeux
-piccoloTrois =  \transpose do do \piccoloTrois
+piccoloTrois =  \transpose do' do \piccoloTrois
 piccoloQuatre =  \transpose do do \piccoloQuatre
 BassUn =  \transpose sib do \piccolo
 trumpetUn =  \transpose sib do' \piccoloDeux
 trumpetDeux =  \transpose sib do \piccoloTrois
 BarytonUn = \transpose mib do \piccolo
 saxAltoUn = \transpose mib, do \piccoloQuatre
+saxAltoDeux = \transpose mib sib \piccoloQuatre
 saxTenorUn = \transpose sib do' \piccoloCinq
 
 
@@ -309,6 +310,22 @@ saxTenorUn = \transpose sib do' \piccoloCinq
   }
 }
 
+
+\book {
+  \bookOutputSuffix "sax_alto2plusbas"
+  \score {
+    \new Staff \with {
+      instrumentName = "Sax alto 2"
+      midiInstrument = "alto sax"
+    } \saxAltoDeux
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+
 \book {
   \bookOutputSuffix "sax_tenor1"
   \score {
@@ -341,3 +358,20 @@ saxTenorUn = \transpose sib do' \piccoloCinq
   }
 }
 
+\book {
+  \paper {
+
+  }
+  \header { poet = "" }
+  \score {
+    <<
+      \new Staff \piccolo
+      \new Staff \piccoloDeux
+      \new Staff \piccoloTrois
+      \new Staff \saxAltoDeux
+      
+
+
+    >>
+  }
+}
