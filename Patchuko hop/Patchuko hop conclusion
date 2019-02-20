@@ -1,0 +1,276 @@
+\version "2.18.2"
+\language "français"
+
+\header {
+  title = "Patchuko hop"
+  subtitle = "Le Groupe Electrogène Fanfare Club"
+  composer = "Mano Negra"
+}
+
+global = {
+  \key do \major
+  \time 4/4
+}
+
+
+
+voixUn= \relative do'' {
+
+\repeat volta 2 {
+
+\times 2/3 {fa8 mi fa} r4 r2 | \times 2/3 {fa8 mi fa} r4 r2 |
+\times 2/3 {fa8 mi fa} r4 r2 | \times 2/3 {la8 lab la} r4 r2 |
+}
+
+\repeat volta 2 {
+\times 2/3 {fa8 mi fa} \times 2/3 {re8 mi fa} la8. sol16 mi4| 
+\times 2/3 {fa8 mi fa} \times 2/3 {re8 mi fa} la2 | 
+\times 2/3 {fa8 mi fa} \times 2/3 {re8 mi fa} la8. sol16 mi4| 
+\times 2/3 {la8 lab la} \times 2/3 {sib8 la lab} la2 | 
+}
+
+\repeat volta 2 {
+\times 2/3 {fa8 mi fa} \times 2/3 {re8 mi fa} la8. sol16 mi4| 
+\times 2/3 {fa8 mi fa} \times 2/3 {re8 mi fa} la2 | 
+\times 2/3 {la8 lab la} sib8. la16 fa4 fa8. fa16 |
+sib4 sib8. sib16 la2 
+}
+\times 2/3 {la8 si dod} re4 r2 \bar "|."
+}
+
+
+voixDeux= \repeat volta 2 {
+
+r4 \times 2/3 {re8 mi fa} r2 | r4 \times 2/3 {re8 mi fa} r2 |
+r4 \times 2/3 {re8 mi fa} r2 | r4 \times 2/3 {sib8 la lab} r2 |
+
+\repeat volta 2 {
+r4 \times 2/3 {la8 lab la} r4 \times 2/3 {la8 lab la} | 
+r4 \times 2/3 {la8 lab la} r4 \times 2/3 {la8 lab la} |
+r4 \times 2/3 {la8 lab la} r4 \times 2/3 {la8 lab la} |
+r4 \times 2/3 {la8 lab la} r2 |
+}
+
+\repeat volta 2 {
+r4 \times 2/3 {la8 lab la} r4 \times 2/3 {la8 lab la} | 
+r4 \times 2/3 {la8 lab la} r4 \times 2/3 {la8 lab la} |
+r4 \times 2/3 {la8 lab la} r4 \times 2/3 {la8 lab la} |
+r4 \times 2/3 {la8 lab la} r2 |
+}
+\times 2/3 {la8 si dod} re4 r2 \bar "|."
+}
+
+voixTrois= \repeat volta 2 {
+  
+r2 la'8. sol16 mi4 | r2 la2 |
+r2 la8. sol16 mi4 | r2 la2 |
+
+\repeat volta 2 {
+r1 | r1| r1 | r1 |
+}
+
+\repeat volta 2 {
+fa4 re' dod mi | fa, re' dod2 |
+dod4 re8. dod16 sib4 sib8. sib16 | re4 re8. re16 dod2 |	
+}
+\times 2/3 {la8 si dod} re4 r2 \bar "|."
+   }
+
+
+piccolo =  \relative do'' {
+  \global
+  \voixUn
+}
+
+piccoloDeux =  \relative do'' {
+  \global
+  \voixDeux
+}
+
+piccoloTrois =  \relative do'' {
+  \global
+  \voixTrois
+}
+
+
+piccolo =  \transpose do do \piccolo
+piccoloDeux =  \transpose do' do \piccoloDeux
+piccoloTrois =  \transpose do do \piccoloTrois
+trumpetUn =  \transpose sib do \piccolo
+trumpetDeux =  \transpose sib do' \piccoloDeux
+trumpetTrois =  \transpose sib do \piccoloTrois
+saxAltoUn = \transpose mib do \piccolo
+saxAltoDeux = \transpose mib, do \piccoloDeux
+saxAltoTrois = \transpose mib do \piccoloTrois
+
+
+\book {
+  \bookOutputSuffix "trumpet1"
+  \score {
+    \new Staff \with {
+      instrumentName = "Trompette 1"
+      midiInstrument = "trumpet"
+    } \trumpetUn
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "trumpet2"
+  \score {
+    \new Staff \with {
+      instrumentName = "Trompette 2"
+      midiInstrument = "trumpet"
+    } \trumpetDeux
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "trumpet3"
+  \score {
+    \new Staff \with {
+      instrumentName = "Trompette 3"
+      midiInstrument = "trumpet"
+    } \trumpetTrois
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "piccolo"
+  \score {
+    \new Staff \with {
+      instrumentName = "Piccolo"
+      midiInstrument = "piccolo"
+    } \piccolo
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "piccolo2"
+  \score {
+    \new Staff \with {
+      instrumentName = "Piccolo 2"
+      midiInstrument = "piccolo"
+    } \piccoloDeux
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "piccolo3"
+  \score {
+    \new Staff \with {
+      instrumentName = "Piccolo 3"
+      midiInstrument = "piccolo"
+    } \piccoloTrois
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "sax_alto1"
+  \score {
+    \new Staff \with {
+      instrumentName = "Sax alto 1"
+      midiInstrument = "sax alto"
+    } \saxAltoUn
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "sax_alto2"
+  \score {
+    \new Staff \with {
+      instrumentName = "Sax alto 2"
+      midiInstrument = "sax alto"
+    } \saxAltoDeux
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "sax_alto3"
+  \score {
+    \new Staff \with {
+      instrumentName = "Sax alto 3"
+      midiInstrument = "sax alto"
+    } \saxAltoTrois
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+\book {
+  \paper {
+
+  }
+  \header { poet = "Trompettes/Sax Sib/Trombone/Clarinette/Cor Iranien" }
+  \score {
+    <<
+      \new Staff \trumpetUn
+      \new Staff \trumpetDeux
+      \new Staff \trumpetTrois
+
+    >>
+  }
+}
+
+\book {
+  \paper {
+
+  }
+  \header { poet = "Sax en mi-molle" }
+  \score {
+    <<
+      \new Staff \saxAltoUn
+      \new Staff \saxAltoDeux
+      \new Staff \saxAltoTrois
+
+    >>
+  }
+}
+
+\book {
+  \paper {
+
+  }
+  \header { poet = "Piccolo et autres instrus en Do" }
+  \score {
+    <<
+      \new Staff \piccolo
+      \new Staff \piccoloDeux
+      \new Staff \piccoloTrois
+
+    >>
+  }
+}
