@@ -1,0 +1,138 @@
+\version "2.18.2"
+\language "français"
+
+\header {
+  title = "Patchuko hop"
+  subtitle = "Le Groupe Electrogène Fanfare Club"
+  composer = "Mano Negra"
+}
+
+global = {
+  \key do \major
+  \time 4/4
+}
+
+
+
+voixUn= \relative do'' {
+
+ \compressFullBarRests
+   R1*20 |
+   \repeat volta 2 {
+r8 fad r fad r fad r fad |
+r re r re r re mi fa |
+r8 fad r fad r fad r fad |
+r re r re r re mi fa |
+   }
+do'2 (do8) si do re8 | 
+si4 sol2 la8 si | 
+do2 (do8) si8 do re8 |
+si mi4 mi8 re do4 si8 |
+do2 (do8) si do re | 
+re2 (re8) re\staccato re\staccato mi\staccato mi\staccato mi\staccato fad\staccato fad\staccato fad\staccato sol4.\staccato
+\compressFullBarRests
+   R1*4^\markup { \huge solo \huge batterie} |
+\repeat volta 2 {
+r8 fad, r fad r fad r fad |
+r re r re r re mi fa |
+r8 fad r fad r fad r fad |
+r re r re r re mi fa |
+r8 fad r fad r fad r fad |
+r re r re r re mi fa |
+r8 fad r fad r fad r fad |
+r re r re r re mi fa |
+   }
+
+\repeat volta 2 {
+fa4^\markup { \huge Passage \huge Tristitude \huge(tempo \huge lent)} mi8 fa8 re4. re8 dod4. dod8 la2 |
+fa'4 mi8 fa8 re4. re8 dod4. dod8 la2 |
+fa'4 mi8 fa8 re4. re8 dod4. dod8 la2 |
+la'4 lab8 la8 la4. la8 la4 sol fa mi | \bar"||"
+fa4 mi8 fa8 re4. mi8 fa la4. sol8 mi4. |
+fa4 mi8 fa8 re4. mi8 fa la2. r8 |
+fa4 mi8 fa8 re4. mi8 fa la4. sol8 mi4. |
+la4 lab8 la8 sib8 la8 lab la la4 sol fa mi |
+}
+do1
+
+\repeat volta 2 {
+  r8^\markup { \huge tempo \huge rapide} fad r fad r fad r fad |
+r re r re r re mi fa |
+r8 fad r fad r fad r fad |
+r re r re r re mi fa |
+r8 fad r fad r fad r fad |
+r re r re r re mi fa |
+r8 fad r fad r fad r fad |
+r re r re r re mi fa |
+}
+
+do'2 (do8) si do re8 | 
+si4 sol2 la8 si | 
+do2 (do8) si8 do re8 |
+si mi4 mi8 re do4 si8 |
+do2 (do8) si do re | 
+re2 (re8) re\staccato re\staccato mi\staccato mi\staccato mi\staccato fad\staccato fad\staccato fad\staccato sol4.\staccato
+
+
+}
+
+
+
+piccolo =  \relative do'' {
+  \global
+  \voixUn
+}
+
+
+
+piccolo =  \transpose do do \piccolo
+trumpetUn =  \transpose sib do \piccolo
+saxAltoUn = \transpose mib do \piccolo
+
+
+
+\book {
+  \bookOutputSuffix "trumpet1"
+  \score {
+    \new Staff \with {
+      instrumentName = "Trompette 1"
+      midiInstrument = "trumpet"
+    } \trumpetUn
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+
+
+\book {
+  \bookOutputSuffix "piccolo"
+  \score {
+    \new Staff \with {
+      instrumentName = "Piccolo"
+      midiInstrument = "piccolo"
+    } \piccolo
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+
+\book {
+  \bookOutputSuffix "sax_alto1"
+  \score {
+    \new Staff \with {
+      instrumentName = "Sax alto 1"
+      midiInstrument = "sax alto"
+    } \saxAltoUn
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
