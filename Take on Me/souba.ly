@@ -37,6 +37,7 @@ r mib r mib mib mib r4 |
 lab,8 lab lab r r4 r8 reb |
 r reb r reb reb4 reb8 reb |
 
+ \repeat volta 2 {
 sib^\markup { \huge B} sib sib r r4 r8 mib |
 r mib r mib mib mib r4 |
 lab,8 lab lab r r4 r8 reb |
@@ -66,7 +67,8 @@ lab'4 lab lab lab |
 sol sol sol sol |
 fa fa fa fa |
 reb reb reb reb |
-
+ }
+ 
 do'8^\markup { \huge D} r r do r4 r8 do |
 do do r do r4 do8 do |
 solb' r r solb, r4 r8 solb |
@@ -136,13 +138,20 @@ reb reb reb reb |
 lab' lab lab lab |
 sol sol sol sol |
 fa fa fa fa |
+
+\set Score.repeatCommands = #'((volta "1") )
 reb reb reb reb |
 lab'4. lab r8 lab |
 sol4. sol r8 sol |
 fa4. fa r8 fa |
 reb4. reb r8 reb |
+\set Score.repeatCommands = #'((volta #f))
 } 
+ \set Score.repeatCommands = #'((volta #f) (volta "2") end-repeat)  
+
 fa1 lab 
+\set Score.repeatCommands = #'((volta #f))
+
 }
 
 
