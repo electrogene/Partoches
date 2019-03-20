@@ -94,10 +94,6 @@ sib1^\markup { \huge F}
 mib |
 mib |
 fa2 mib |
-sib1
-mib1 |
-mib |
-fa2 mib |
 
 
 reb4.^\markup { \huge G} mib8 (mib) reb mib4 
@@ -233,10 +229,7 @@ sib1^\markup { \huge F}
 mib |
 mib |
 fa2 mib |
-sib1
-mib1 |
-mib |
-fa2 mib |
+
 
 
 reb4.^\markup { \huge G} mib8 (mib) reb mib4 
@@ -379,10 +372,7 @@ sib1^\markup { \huge F}
 mib |
 mib |
 fa2 mib |
-sib1
-mib1 |
-mib |
-fa2 mib |
+
 
 
 reb4.^\markup { \huge G} mib8 (mib) reb mib4 
