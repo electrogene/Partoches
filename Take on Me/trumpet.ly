@@ -43,7 +43,7 @@ r4 sib8 r r sib r4 |
 sib8 r r sib r4 sib8 do |
 r4 do8 r r do r4 |
 do8 r r do r4 mib |
-fa1 | sol2 re \bar "||"
+fa1 | mib2 re \bar "||"
 
 
 sib,1^\markup { \huge C} |
@@ -88,10 +88,6 @@ r sol r sol fa fa sol fa \bar "||"
 sol8^\markup { \huge F} sol mib do r do r fa |
 r fa r fa la la sib do |
 sib sib sib fa r mib r sol |
-r sol r sol fa fa sol fa |
-sol sol mib do r do r fa |
-r fa r fa la la sib do |
-sib sib sib fa r fa r sol |
 r sol r sol fa fa sol fa \bar "||"
 
 r4^\markup { \huge G} do'8 r r do r4 |
@@ -104,16 +100,18 @@ r4 sib8 r r sib r4 |
 sib8 r r sib r4 sib8 do |
 r4 do8 r r do r4 |
 do8 r r do r4 mib |
-fa1 | sol2 re |
+fa1 | mib2 re |
 
 sib,1^\markup { \huge H} |
 la'2. (la8) sib
 (sib1)
-(sib2) r2 | sib,1
+(sib2) r2 | 
+sib,1
 fa'2. (fa8) sol
 (sol1) 
 (sol2) r2
-re1 | la'2. (la8) sib
+re1 | 
+la'2. (la8) sib
 (sib1)
 r2 fa8 la4. |
 fa'1
@@ -124,14 +122,15 @@ fa'1
 
  \repeat volta 2 {
 sib,,1^\markup { \huge I} |
-la'2. (la8) sib
-(sib1)
-(sib2) r2 | sib,1
 fa'2. (fa8) sol
 (sol1) 
+(sol2) r2
+re1 | 
+la'2. (la8) sib
+(sib1)
 
 \set Score.repeatCommands = #'((volta "1") )
-sol2 fa8 la4. |
+sib2 fa8 la4. |
 fa'1
 (fa)
 (fa)
@@ -139,7 +138,7 @@ fa'1
 \set Score.repeatCommands = #'((volta #f))
  }
  \set Score.repeatCommands = #'((volta #f) (volta "2") end-repeat)  
-sol,2 fa4 la re1 
+sib,2 fa4 la re1 
 \set Score.repeatCommands = #'((volta #f))
 } 
 
