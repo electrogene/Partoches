@@ -95,10 +95,7 @@ sib8^\markup { \huge F} sib sib r r4 r8 mib |
 r mib r mib mib mib r4 |
 lab,8 lab lab r r4 r8 reb |
 r reb r reb reb4 reb8 reb |
-sib8 sib sib r r4 r8 mib |
-r mib r mib mib mib r4 |
-lab,8 lab lab r r4 r8 reb |
-r reb r reb reb4 reb8 reb |
+
 
 sib8^\markup { \huge G} sib sib r r4 r8 mib |
 r mib r mib mib mib r4 |
