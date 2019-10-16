@@ -1,0 +1,463 @@
+\version "2.18.2"
+\language "français"
+
+\header {
+  title = "Caravan + Misirlou"
+  subtitle = "Le Groupe Electrogène Fanfare Club"
+  composer = "101 Brass Band"
+}
+
+global = {
+  \key do \major
+  \time 4/4
+}
+
+
+
+voixUn= \repeat volta 2 {
+  \set Staff.instrumentName = "Melody"
+
+R1*8^\markup { \huge intro \huge percus} |
+
+la'1 
+(la8) sib la mi sol la dod mi, |
+sol1
+la8 sib la sib la sol mi sol 
+(sol1)
+(sol8) la8 lab sol solb fa mi re |
+re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
+re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
+
+r1^\markup { \huge basse \huge seule} |
+r1 |
+r1 |
+r1 |
+
+\repeat volta 2 {
+la1 (la8) sib la mi sol la dod mi, |
+sol1
+la8 sib la sib la sol mi sol 
+(sol1)
+(sol8) la8 lab sol solb fa mi re |
+re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
+re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
+}
+
+r1^\markup { \huge basse \huge seule} | |
+r1 |
+r1 |
+r1  \bar"||"
+
+la,4.^\markup { \huge Misirlou \huge tempo \huge militaire} sib8 dod4. re8 
+mi4. fa8 sold4. fa8 
+mi1 
+(mi)
+
+la,4. sib8 dod4. re8 
+mi4. fa8 sold4. fa8 
+mi1 
+(mi)
+
+\relative {
+   \repeat volta 2 {
+  fa''4^\markup { \huge Misirlou \huge tempo \huge lent} mi8 fa mi4 re
+mi re8 mi re4 dod8 la8
+dod1
+(dod)
+mi4 re8 mi re4 dod4 
+dod sib8 dod sib 4 la }
+\alternative {
+{
+la1
+(la)
+}
+ 
+
+ {
+la1
+(la2.) (la8) la
+ }
+}
+}
+
+\bar "||"
+
+re2.^\markup { \huge Misirlou \huge tempo \huge rapide} dod8 re
+mi2. re8 mi
+fa2. mi8 fa
+sold2 (sold8) mi8 fa sold
+la1
+(la)
+
+\repeat volta 2 {
+fa4 mi8 fa mi4 re
+mi re8 mi re4 dod8 la8
+dod1
+(dod)
+mi4 re8 mi re4 dod4 
+dod sib8 dod sib 4 la 
+la1
+(la)
+}
+
+r1^\markup { \huge break \huge Hey \huge Hey \huge Hey}
+r1
+r1
+r1 \bar"||"
+
+r1^\markup { \huge basse \huge seule} |
+r1 |
+r1 |
+r1 |
+
+\repeat volta 2 {
+la'1 (la8) sib la mi sol la dod mi, |
+sol1
+la8 sib la sib la sol mi sol 
+(sol1)
+(sol8) la8 lab sol solb fa mi re |
+re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
+re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
+}
+}
+
+
+voixDeux= \repeat volta 2 {
+  \set Staff.instrumentName = "Harmony"
+
+R1*8^\markup { \huge intro \huge percus} |
+
+r1 |
+r1 |
+r4 mi,16 fa8 sol4 sol16 la8 sib 
+r1 |
+r4 mi,16 fa8 sol4 sol16 la8 sib 
+r1 |
+sol8\staccato r16 sib8\staccato r16 la4.\staccato r4 |
+sol8\staccato r16 sib8\staccato r16 la4.\staccato r4 |
+
+
+r1 |
+r1 |
+r1 |
+r1 |
+
+\repeat volta 2 {
+r1 |
+r1 |
+r4 mi16 fa8 sol4 sol16 la8 sib 
+r1 |
+r4 mi,16 fa8 sol4 sol16 la8 sib 
+r1 |
+sol8\staccato r16 sib8\staccato r16 la4.\staccato r4 |
+sol8\staccato r16 sib8\staccato r16 la4.\staccato r4 |
+}
+
+r1 | | |
+r1 |
+r1 |
+r1 \bar"||"
+
+la,4. sib8 dod4. re8 
+mi4. fa8 sold4. fa8 
+mi1 
+(mi)
+
+la,4. sib8 dod4. re8 
+mi4. fa8 sold4. fa8 
+mi1 
+(mi)
+
+\relative {
+   \repeat volta 2 {
+ r1
+r1
+mi'4 fa8 sol fa4 sol8 sold
+sol4 fa mi2
+r1
+r1}
+\alternative {
+{
+re8 la dod re mi sib dod re
+mi fa mi re dod4 sib
+}
+ 
+
+ {
+re8 la dod re mi sib dod re
+mi fa mi re dod4 sib
+ }
+}
+}
+\bar"||"
+re2. dod8 re
+mi2. re8 mi
+fa2. mi8 fa
+sold2 (sold8) mi8 fa sold
+la8 la r la sib la sib la
+r la r la sib la sib la
+
+\repeat volta 2 {
+r1
+r1
+mi4 fa8 sol fa4 sol8 sold
+sol4 fa mi2
+r1
+r1
+re8 la dod re mi sib dod re
+mi fa mi re dod4 sib
+}
+
+r1
+r1
+r1
+r1 \bar"||"
+
+r1
+r1 |
+r1 |
+r1 |
+
+\repeat volta 2 {
+r1 |
+r1 |
+r4 mi16 fa8 sol4 sol16 la8 sib 
+r1 |
+r4 mi,16 fa8 sol4 sol16 la8 sib 
+r1 |
+sol8\staccato r16 sib8\staccato r16 la4.\staccato r4 |
+sol8\staccato r16 sib8\staccato r16 la4.\staccato r4 |
+}
+
+}
+
+  
+
+voixTrois= \repeat volta 2 {
+  \set Staff.instrumentName = "Bass"
+
+ \compressFullBarRests
+R1*8^\markup { \huge intro \huge percus} |
+
+r1 |
+r1 |
+r1 |
+r1 |
+r1 |
+r1 |
+r1 |
+r1 |
+
+la'8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+
+\repeat volta 2 {
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
+re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
+}
+
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 \bar"||"
+
+la4 \times 2/3 {la8 la la} la4 la
+sib4 \times 2/3 {sib8 sib sib} sib4 sib
+la4 \times 2/3 {la8 la la} la4 la
+la4 \times 2/3 {la8 la la} la4 la
+la4 \times 2/3 {la8 la la} la4 la
+sib4 \times 2/3 {sib8 sib sib} sib4 sib
+la4 \times 2/3 {la8 la la} la4 la
+la4 \times 2/3 {la8 la la} la4 la
+
+\relative {
+   \repeat volta 2 {
+ la'4 re8 mi la,4 re8 mi
+sib4 re8 fa sib,4 re8 fa
+la,4 re8 mi la,4 re8 mi
+la,4 re8 mi la,4 re8 mi
+sib4 re8 fa sib,4 re8 fa
+sib,4 re8 fa sib,4 re8 fa }
+\alternative {
+{
+la,4 re8 mi la,4 re8 mi
+la,4 re8 mi la,4 re8 mi
+}
+ 
+
+ {
+la,4 re8 mi la,4 re8 mi
+la,4 re8 mi la,4. la8
+ }
+}
+}
+
+
+
+\bar "||"
+
+
+re,8 re r4 re8 re r4
+mi8 mi r4 mi8 mi r4
+fa8 fa r4 fa8 fa r4
+sold8 sold r4 sold8 sold r4
+la8 la r la sib la sib la
+r la r la sib la sib la
+
+\repeat volta 2 {
+la4 re8 mi la,4 re8 mi
+sib4 re8 fa sib,4 re8 fa
+la,4 re8 mi la,4 re8 mi
+la,4 re8 mi la,4 re8 mi
+sib4 re8 fa sib,4 re8 fa
+sib,4 re8 fa sib,4 re8 fa
+la,4 re8 mi la,4 re8 mi
+la,4 re8 mi la,4 re8 mi
+  }
+  
+  
+r1
+r1
+r1
+r1 \bar"||" 
+  
+la,8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+
+\repeat volta 2 {
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
+re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
+  
+   }
+ }
+
+piccolo =  \relative do'' {
+  \global
+  \voixUn
+}
+
+piccoloDeux =  \relative do'' {
+  \global
+  \voixDeux
+}
+
+piccoloTrois =  \relative do'' {
+  \global
+  \voixTrois
+}
+
+
+UtUn =  \transpose do do \piccolo
+UtDeux =  \transpose do' do \piccoloDeux
+UtTrois =  \transpose do do \piccoloTrois
+trumpetUn =  \transpose sib do \piccolo
+trumpetDeux =  \transpose sib do' \piccoloDeux
+trumpetTrois =  \transpose sib do \piccoloTrois
+saxAltoUn = \transpose mib do \piccolo
+saxAltoDeux = \transpose mib, do \piccoloDeux
+saxAltoTrois = \transpose mib do \piccoloTrois
+
+
+\book {
+  \paper {
+
+  }
+  \header { poet = "Instrus en Do" }
+  \score {
+    <<
+      \new Staff \UtUn
+      \new Staff \UtDeux
+      \new Staff \UtTrois
+
+    >>
+  }
+}
+
+\book {
+  \paper {
+
+  }
+  \header { poet = "Trompettes/Sax Sib/Trombone/Clarinette/Cor Iranien" }
+  \score {
+    <<
+      \new Staff \trumpetUn
+      \new Staff \trumpetDeux
+      \new Staff \trumpetTrois
+
+    >>
+  }
+}
+
+\book {
+  \paper {
+
+  }
+  \header { poet = "Sax en mi-molle" }
+  \score {
+    <<
+      \new Staff \saxAltoUn
+      \new Staff \saxAltoDeux
+      \new Staff \saxAltoTrois
+
+    >>
+  }
+}
+
+
+\book {
+  \bookOutputSuffix "trumpet1"
+  \score {
+    \new Staff \with {
+      instrumentName = "Trompette 1"
+      midiInstrument = "trumpet"
+    } \trumpetUn
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "trumpet2"
+  \score {
+    \new Staff \with {
+      instrumentName = "Trompette 2"
+      midiInstrument = "trumpet"
+    } \trumpetDeux
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
+
+\book {
+  \bookOutputSuffix "trumpet3"
+  \score {
+    \new Staff \with {
+      instrumentName = "Trompette 3"
+      midiInstrument = "trumpet"
+    } \trumpetTrois
+    \layout { }
+    \midi {
+      \tempo 4=140
+    }
+  }
+}
