@@ -313,7 +313,7 @@ la8 la r la sib la sib la
 r la r la sib la sib la
 
 \repeat volta 2 {
-la4 re8 mi la,4 re8 mi
+la,4 re8 mi la,4 re8 mi
 sib4 re8 fa sib,4 re8 fa
 la,4 re8 mi la,4 re8 mi
 la,4 re8 mi la,4 re8 mi
@@ -329,7 +329,7 @@ r1
 r1
 r1 \bar"||" 
   
-la,8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
+la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
 la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
 la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
 la8 r16 mi8 r16 sol8 r8 mi8 sol8 sold8 |
