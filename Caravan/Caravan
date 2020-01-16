@@ -22,8 +22,8 @@ R1*8^\markup { \huge intro \huge percus} |
 la'1 
 (la8) sib la mi sol la dod mi, |
 sol1
-la8 sib la sib la sol mi sol 
-(sol1)
+r8 la8 sib la sib la sol mi 
+sol1
 (sol8) la8 lab sol solb fa mi re |
 re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
 re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
@@ -36,8 +36,8 @@ r1 |
 \repeat volta 2 {
 la1 (la8) sib la mi sol la dod mi, |
 sol1
-la8 sib la sib la sol mi sol 
-(sol1)
+r8 la8 sib la sib la sol mi 
+sol1
 (sol8) la8 lab sol solb fa mi re |
 re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
 re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
@@ -113,8 +113,8 @@ r1 |
 \repeat volta 2 {
 la'1 (la8) sib la mi sol la dod mi, |
 sol1
-la8 sib la sib la sol mi sol 
-(sol1)
+r8 la8 sib la sib la sol mi 
+sol1
 (sol8) la8 lab sol solb fa mi re |
 re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
 re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
