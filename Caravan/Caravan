@@ -129,12 +129,12 @@ R1*8^\markup { \huge intro \huge percus} |
 
 r1 |
 r1 |
-r4 mi,16 fa8 sol4 sol16 la8 sib 
-r1 |
-r4 mi,16 fa8 sol4 sol16 la8 sib 
-r1 |
-sol8\staccato r16 sib8\staccato r16 la4.\staccato r4 |
-sol8\staccato r16 sib8\staccato r16 la4.\staccato r4 |
+r4 mi,16 fa8 sol8 r8 sol16 lab8 la8  
+sib8 r8 r4 r2 |
+r4 mi,16 fa8 sol8 r8 sol16 lab8 la8 
+sib8 r8 r4 r2 |
+re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
+re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
 
 
 r1 |
@@ -145,12 +145,12 @@ r1 |
 \repeat volta 2 {
 r1 |
 r1 |
-r4 mi16 fa8 sol4 sol16 la8 sib 
-r1 |
-r4 mi,16 fa8 sol4 sol16 la8 sib 
-r1 |
-sol8\staccato r16 sib8\staccato r16 la4.\staccato r4 |
-sol8\staccato r16 sib8\staccato r16 la4.\staccato r4 |
+r4 mi,16 fa8 sol8 r8 sol16 lab8 la8  
+sib8 r8 r4 r2 |
+r4 mi,16 fa8 sol8 r8 sol16 lab8 la8 
+sib8 r8 r4 r2 |
+re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
+re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
 }
 
 r1 | | |
@@ -158,7 +158,7 @@ r1 |
 r1 |
 r1 \bar"||"
 
-la,4. sib8 dod4. re8 
+la,,4. sib8 dod4. re8 
 mi4. fa8 sold4. fa8 
 mi1 
 (mi)
@@ -221,12 +221,12 @@ r1 |
 \repeat volta 2 {
 r1 |
 r1 |
-r4 mi16 fa8 sol4 sol16 la8 sib 
-r1 |
-r4 mi,16 fa8 sol4 sol16 la8 sib 
-r1 |
-sol8\staccato r16 sib8\staccato r16 la4.\staccato r4 |
-sol8\staccato r16 sib8\staccato r16 la4.\staccato r4 |
+r4 mi16 fa8 sol8 r8 sol16 lab8 la8  
+sib8 r8 r4 r2 |
+r4 mi,16 fa8 sol8 r8 sol16 lab8 la8 
+sib8 r8 r4 r2 |
+re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
+re8\staccato r16 fa8\staccato r16 mi4.\staccato r4 |
 }
 
 }
