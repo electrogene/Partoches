@@ -67,20 +67,20 @@ re8^\markup { \huge intro} <la' re>8 r8 <la re>8 r8 <la re>8 r8 <la re>8 re,8 <l
   \break
  
  r1^\markup { \huge D} r8 re8 r8 re8 r8 re8 r8 re8
+  \times 2/3 {r8 re4. re4} \times 2/3 {re4 re re}
  r8 re8 r8 re8 r8 re8 r8 re8
+  \times 2/3 {r8 re4. re4} \times 2/3 {re4 re re}
  r8 re8 r8 re8 r8 re8 r8 re8
- r8 re8 r8 re8 r8 re8 r8 re8
- r8 re8 r8 re8 r8 re8 r8 re8
- r8 re8 r8 re8 r8 re8 r8 re8
+  \times 2/3 {r8 re4. re4} \times 2/3 {re4 re re}
  r8 re8 r8 re8 r8 re8 r8 re8\bar "||"
   \break
  r8^\markup { \huge E \huge joué \huge puis \huge chanté (le thème)} re8 r8 re8 r8 mi8 r8 fa8
  r8 sol8 r8 sol8 r8 sol8 r8 sol8
- r8 sol8 r8 sol8 r8 sol8 r8 sol8
+  \times 2/3 {r8 sol4. sol4} \times 2/3 {sol4 sol sol}
  r8 re8 r8 re8 r8 re8 r8 re8
- r8 re8 r8 re8 r8 mi8 r8 fa8
+  \times 2/3 {r8 re4. re4} \times 2/3 {re4 re re}
  r8 sol8 r8 sol8 r8 sol8 r8 sol8
- r8 sol8 r8 sol8 r8 sol8 r8 sol8
+  \times 2/3 {r8 sol4. sol4} \times 2/3 {sol4 sol sol}
   r8 re8 r8 re8 r8 re8 r8 re8 
   \break
   
